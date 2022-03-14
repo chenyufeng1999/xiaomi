@@ -1,0 +1,84 @@
+.main{
+    width: 100%;
+    background-color: #f5f5f5;
+}
+.main-title{
+    width: 100%;
+    height: 58px;
+    line-height: 58px;
+}
+.main-title h1{
+    font-size: 22px;
+    color: #323232;
+}
+.main-title-right{
+    cursor: pointer;
+}
+.main-title-right span{
+    color: #4b4b4b;
+}
+.main-title-icon{
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    border-radius: 50%;
+    background-color: #b0b0b0;
+    text-align: center;
+    margin-top: 18px;
+    margin-left: 10px;
+}
+.main-title-icon i{
+    font-size: 12px;
+    color: #f6f6f6;
+}
+.main-content{
+    width: 100%;
+    height: 614px;
+}
+.main-content-left{
+    width: 234px;
+    height: 614px;
+}
+.main-content-left img{
+    width: 100%;
+    height: 100%;
+}
+.main-content-right{
+    width: 992px;
+    height: 614px;
+    padding-left: 14px;
+}
+.main-content-right>a{
+    display: block;
+    width: 234px;
+    padding-top: 20px;
+    height: 300px;
+    background-color: #ffffff;
+    text-align: center;
+    float: left;
+    margin-left: 14px;
+}
+.main-content-right>a:nth-child(4n+1){
+    margin-left: 0;
+}
+.main-content-right>a:nth-child(n+5){
+    margin-top: 14px;
+}
+.main-content-right>a img{
+    width: 160px;
+    height: 160px;
+    margin-bottom: 20px;
+}
+.main-content-right>a span{
+    display: block;
+}
+.main-content-right>a span:nth-of-type(2){
+    font-size: 12px;
+    color: #b0b0b0;
+}
+.main-content-right>a span:nth-of-type(3){
+    color: #ff6700;
+}
+.main-content-right>a:hover{
+    color: inherit;
+}

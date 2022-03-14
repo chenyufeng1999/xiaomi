@@ -1,0 +1,12 @@
+.banner3{
+    width: 100%;
+    padding: 22px 0;
+}
+.banner3 a{
+    display: block;
+    width: 100%;
+}
+.banner3 a img{
+    width: 100%;
+    display: block;
+}

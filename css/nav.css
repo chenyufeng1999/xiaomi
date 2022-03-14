@@ -1,0 +1,136 @@
+/* 导航栏 */
+.nav{
+    width: 100%;
+    height: 100px;
+    background: #fff;
+    position: relative;
+}
+
+.nav-logo{
+    height: 100%;
+    overflow: hidden;
+}
+.nav-logo a{
+    width: 56px;
+    height: 56px;
+    display: block;
+    background: url(../img/logo.png);
+    background-size: cover;
+    margin-top: 22px;
+    margin-right: 172px;
+}
+.nav-logo a h1{
+    display: none;
+}
+/* menu */
+.nav-menu>a{
+    float: left;
+    font-size: 16px;
+    line-height: 100px;
+    padding: 0 7px;
+}
+/* 二级菜单 */
+.nav-submenu{
+    width: 100%;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    border: 1px solid #ccc;
+    background: #fff;
+    display: none;
+    z-index: 20;
+}
+.nav-submenu a{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 204px;
+    float: left;
+    border-right: 1px solid #eee;
+    text-align: center;
+}
+.nav-submenu a:last-child{
+    border: none;
+}
+.nav-submenu a img{
+    width: 160px;
+    height: 110px;
+}
+.nav-price{
+    width: 100%;
+    color: #ff6700;
+}
+.nav-name{
+    width: 100%;
+}
+/* 鼠标移入菜单栏二级菜单显示 */
+.nav-menu:hover .nav-submenu{
+    display: block;
+}
+/* 搜索框 */
+.nav-search{
+    height: 100px;
+    padding-top: 25px;
+    position: relative;
+}
+.nav-search input{
+    width: 245px;
+    height: 50px;
+    padding-left: 15px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    outline: none;
+}
+.nav-search button{
+    width: 55px;
+    height: 50px;
+    line-height: 50px;
+    outline: none;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-left: none;
+    font-size: 20px;
+    color: #616161;
+    cursor: pointer;
+}
+.nav-suggest{
+    position: absolute;
+    left: 0;
+    top: 75px;
+    width: 245px;
+    background: #fff;
+    border:1px solid #ff6700;
+    border-top: none;
+    display: none;
+    z-index: 20;
+}
+.nav-suggest a{
+    display: block;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    padding-left: 15px;
+    color: inherit;
+}
+.nav-suggest a:hover{
+    background: #eee;
+}
+.nav-inp:hover{
+    border-color: rgb(233, 223, 223);
+}
+.nav-inp:hover ~ .nav-searchBtn{
+    border-color: rgb(233, 223, 223);
+}
+.nav-searchBtn:hover{
+    border-color: #ff6700;
+    background: #ff6700;
+    color: #fff;
+}
+.nav-inp:focus{
+    border-color: #ff6700;
+}
+.nav-inp:focus ~ .nav-searchBtn{
+    border-color: #ff6700;
+}
+.nav-inp:focus ~ .nav-suggest{
+    display: block;
+}

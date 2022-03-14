@@ -1,0 +1,65 @@
+.header{
+    width: 100%;
+    height: 40px;
+    background-color: #333333;
+    color: #b0b0b0;
+}
+.header-menu li{
+    float: left;
+    font-size: 12px;
+    line-height: 40px;
+}
+.header-menu li a{
+    padding: 0 7px;
+    border-right: 1px solid #424242;
+}
+.header-menu li:first-child a{
+    padding-left: 0;
+}
+.header-menu li:last-child a{
+    border-right: none;
+}
+.header-menu li a:hover{
+    color: #fff;
+}
+
+/* 购物车 */
+.header .cart{
+    width: 120px;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    margin-left: 10px;
+    background-color: #424242;
+    position: relative;
+}
+.header .cart a{
+    width: 100%;
+    height: 100%;
+    padding: 0 10px;
+    display: block;
+}
+/* 购物车鼠标移入的样式 */
+.header .cart a:hover{
+    background-color: #fff;
+}
+.header .cart:hover .mask-cart{
+    display: block;
+}
+.header .cart:hover .header-cart{
+    background-color: #fff;
+    color: #ff6700;
+}
+/* 隐藏的购物车 */
+.mask-cart{
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 40px;
+    width: 200px;
+    height: 100px;
+    background-color: #fff;
+    border: 1px solid #dedede;
+    padding: 10px;
+    z-index: 10;
+}
